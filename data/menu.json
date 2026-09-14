@@ -1,0 +1,726 @@
+[
+  [
+    "Breakfast",
+    "Start the day, the Enat way.",
+    [
+      [
+        "Enat Special Breakfast",
+        "Pancake, Omelet, Toast Bread,Avocado, Tomato",
+        1500
+      ],
+      [
+        "Chechebsa",
+        "Pita Bread, Oil, Hot Pepper",
+        350
+      ],
+      [
+        "Special chechebsa",
+        "Pita Bread, Local Butter, Egg, Hot Pepper",
+        450
+      ],
+      [
+        "Cheese omlat",
+        "Egg, Cheese, Tomato, Onion, Chili",
+        500
+      ],
+      [
+        "Special Omelet",
+        "Egg, Beef, Cheese, Tomato, Onion, Chili",
+        550
+      ],
+      [
+        "Spinash Omelet",
+        "Egg, Potato, Onion, olive oil",
+        480
+      ],
+      [
+        "Plain Omelet",
+        "Egg, butter, Black pepper",
+        350
+      ],
+      [
+        "Omlet with Vegetable",
+        "Egg, Tomato, Carrot, Zucchini, Cabbage",
+        450
+      ],
+      [
+        "Egg  with Meat",
+        "Ground beef, Egg,onion,chili, Garlic,Berebere,Black Pepper",
+        500
+      ],
+      [
+        "Egg Sandwich",
+        "Egg, Bread, Mayonnaise, Tomato, Onion, Chili",
+        500
+      ],
+      [
+        "French Toast",
+        "Slice cut bread, Egg, milk, Sugar, Vanilla, Cinanmon, Butter served With Syrup/Honey",
+        450
+      ],
+      [
+        "Pancake",
+        "Egg, Flour, Sugar,Milk, Vanilla Served with syrup/Honey",
+        350
+      ],
+      [
+        "Pancake with Fruit",
+        "Egg, Flour, Sugar,Milk, Vanilla, sliced Fruit, Served with syrup/Honey",
+        450
+      ],
+      [
+        "Egg  Scramble",
+        "Egg, Tomato, Onion, Chili",
+        300
+      ],
+      [
+        "Avocado toste",
+        "Bread, Avocado, Black Pepper",
+        410
+      ],
+      [
+        "Oat Meal",
+        "Milk, Oats",
+        410
+      ],
+      [
+        "Fride Egg",
+        "Egg, butter/olive oil,black pepper",
+        410
+      ],
+      [
+        "Boiled Egg",
+        "Egg boiled  with water",
+        300
+      ]
+    ]
+  ],
+  [
+    "Chicken",
+    "Comforting plates, served with rice or vegetables.",
+    [
+      [
+        "Chicken Breast",
+        "Chicken,Served with Rice or Vegetables",
+        1200
+      ],
+      [
+        "Chicken Cutlet",
+        "Chicken, Bread Crumbs, Served with Rice or Vegetables",
+        1000
+      ],
+      [
+        "Chicken Goulash",
+        "Chicken, Tomato Sauce, Tomato, Onion, Chili, Served with Rice or Vegetables",
+        1100
+      ],
+      [
+        "Chicken Sizzler",
+        "Chicken, Carrot, Zucchini, Cabbage, Onion, Chili, Served with Rice or Vegetables",
+        900
+      ],
+      [
+        "Chicken Prosciutto",
+        "Chicken, Tomato, Onion, ChiliServed with Rice or Vegetables",
+        1100
+      ]
+    ]
+  ],
+  [
+    "Fish",
+    "Fresh, simple and satisfying.",
+    [
+      [
+        "Fish Combo",
+        "Fish Cutlet, Fish Goulash, Fried Fish, Salad, Rice",
+        2000
+      ],
+      [
+        "Fish Cutlet",
+        "Served with Rice or Vegetables",
+        1200
+      ],
+      [
+        "Fish Goulash",
+        "Fish, Tomato Sauce, Onion, Tomato, Chili,Served with Rice or Vegetables",
+        1000
+      ]
+    ]
+  ],
+  [
+    "Beef",
+    "Hearty favorites from the grill.",
+    [
+      [
+        "Beef Sizzler",
+        "Beef, Onion, Tomato, Chili",
+        950
+      ],
+      [
+        "Pepper Steak",
+        "Beef, Brown Sauce,Served with Rice or Vegetables",
+        1200
+      ]
+    ]
+  ],
+  [
+    "Burgers",
+    "Juicy favorites, made to satisfy.",
+    [
+      [
+        "special burger",
+        "Beef, Egg,  Cheese, Mayonnaise,Tomato, Lettuce,Served with French Fries",
+        900
+      ],
+      [
+        "cheese burger",
+        "Beef, Cheese, Mayonnaise,Tomato, Lettuce,Served with French Fries",
+        750
+      ],
+      [
+        "beef burger",
+        "Beef, Mayonnaise,Tomato, Lettuce,Served with French Fries",
+        650
+      ],
+      [
+        "French frice",
+        "",
+        350
+      ]
+    ]
+  ],
+  [
+    "Sandwiches",
+    "Freshly made favorites.",
+    [
+      [
+        "Club Sandwich",
+        "Beef, Chicken, Tuna, Mayonnaise, Lettuce, Tomato, Onion, Chili",
+        900
+      ],
+      [
+        "Chicken Sandwich",
+        "Chicken, Mayonnaise, Lettuce, Onion, Tomato, Chili",
+        800
+      ],
+      [
+        "Tuna Sandwich",
+        "Tuna, Tomato Sauce, Onion, Tomato, Chili, Ketchup",
+        750
+      ],
+      [
+        "Vegetable Sandwich",
+        "Carrot, Zucchini, Cabbage, Onion, Chili",
+        500
+      ]
+    ]
+  ],
+  [
+    "Pizza",
+    "Stone-baked favorites, made with love.",
+    [
+      [
+        "Special pizza",
+        "Tomato Sauce, Beef, Chicken, Black Olives, Oregano, Egg, Mozzarella Cheese",
+        950
+      ],
+      [
+        "Beef Pizza",
+        "Tomato Sauce, Cheese, Beef, Black Olives, Oregano",
+        850
+      ],
+      [
+        "Chicken Pizza",
+        "Chicken, Mozzarella Cheese, Black Olives, Oregano",
+        850
+      ],
+      [
+        "Fasting Tuna Pizza",
+        "Tomato Sauce, Tuna, Chili, Onion, Black Olives, Oregano",
+        700
+      ],
+      [
+        "Margareta pizza",
+        "Tomato Sauce, Cheese, Black Olives, Oregano",
+        850
+      ],
+      [
+        "Tuna Pizza",
+        "Tomato Sauce, Cheese, Tuna, Black Olives, Oregano",
+        850
+      ],
+      [
+        "Vegetable Pizza",
+        "Mixed Vegetables, Tomato Sauce, Black Olives, Oregano",
+        550
+      ]
+    ]
+  ],
+  [
+    "Soups",
+    "A warm bowl, made from scratch.",
+    [
+      [
+        "Chicken Cream Soup",
+        "Chicken, White Cream Sauce",
+        700
+      ],
+      [
+        "Minestrone Soup",
+        "Zucchini, Carrot, Cabbage, Pasta",
+        600
+      ],
+      [
+        "Vegetable Soup",
+        "Carrot, Zucchini, Cabbage",
+        500
+      ]
+    ]
+  ],
+  [
+    "Salads",
+    "Crisp, colorful and freshly dressed.",
+    [
+      [
+        "Chicken Salad",
+        "Chicken, Mayonnaise, Tomato, Onion, Chili, Salad Dressing",
+        850
+      ],
+      [
+        "Tuna Salad",
+        "Tuna, Lettuce, Tomato, Onion, Chili, Salad Dressing",
+        750
+      ],
+      [
+        "Special Salad",
+        "Beef, Tuna, Chicken, Onion, Chili, Tomato, Salad Dressing",
+        950
+      ],
+      [
+        "Avocado Salad",
+        "Avocado, Lettuce, Tomato, Onion, Chili, Salad Dressing",
+        600
+      ],
+      [
+        "Mixed Salad",
+        "Lettuce, Tomato, Onion, Chili, Salad Dressing",
+        500
+      ]
+    ]
+  ],
+  [
+    "Spaghetti",
+    "Classic pasta favorites.",
+    [
+      [
+        "Spaghetti Bolognese",
+        "Meat Sauce",
+        600
+      ],
+      [
+        "Spaghetti with Tuna",
+        "Tomato Sauce, Tuna",
+        650
+      ],
+      [
+        "Vegetable Spaghetti",
+        "Mixed Vegetables",
+        450
+      ],
+      [
+        "Spaghetti with Tomato Sauce",
+        "",
+        450
+      ]
+    ]
+  ],
+  [
+    "Wraps",
+    "Rolled, toasted and ready to enjoy.",
+    [
+      [
+        "Avocado Wrap",
+        "",
+        500
+      ],
+      [
+        "Avocado & Egg Wrap",
+        "",
+        600
+      ],
+      [
+        "Vegetable Wrap",
+        "",
+        500
+      ],
+      [
+        "Beef Wrap",
+        "",
+        750
+      ],
+      [
+        "Chicken Wrap",
+        "",
+        750
+      ],
+      [
+        "Tuna Wrap",
+        "",
+        800
+      ]
+    ]
+  ],
+  [
+    "Shawarma",
+    "Rolled, toasted and ready to enjoy.",
+    [
+      [
+        "Beef Shawarma",
+        "",
+        720
+      ],
+      [
+        "Chicken Shawarma",
+        "",
+        720
+      ],
+      [
+        "Tuna Shawarma",
+        "",
+        720
+      ]
+    ]
+  ],
+  [
+    "Rice",
+    "Familiar favorites for any appetite.",
+    [
+      [
+        "Rice with Chicken",
+        "",
+        650
+      ],
+      [
+        "Rice with Tuna",
+        "",
+        700
+      ],
+      [
+        "Rice with Meat Sauce",
+        "",
+        680
+      ],
+      [
+        "Rice with Vegetables",
+        "",
+        500
+      ]
+    ]
+  ],
+  [
+    "Ethiopian Corner",
+    "የእናት ጣዕም · The taste of home.",
+    [
+      [
+        "የፆም/Fasting",
+        "",
+        null
+      ],
+      [
+        "በየአይነት",
+        "",
+        380
+      ],
+      [
+        "ተጋቢኖ",
+        "",
+        350
+      ],
+      [
+        "ሽሮ ፈሰስ",
+        "",
+        300
+      ],
+      [
+        "የፆም ፍርፍር",
+        "",
+        300
+      ],
+      [
+        "ሱፍ ፍትፍት",
+        "",
+        300
+      ],
+      [
+        "ግማሽ ግማሽ /Half Half",
+        "",
+        350
+      ],
+      [
+        "የፍስክ/Non Fasting",
+        "",
+        null
+      ],
+      [
+        "Chikina Tibs  ጭቅና ጥብስ",
+        "",
+        800
+      ],
+      [
+        "Lamb Tibs  የበግ ጥብስ",
+        "",
+        800
+      ],
+      [
+        "Kunta Firfir ቋንጣ ፍርፍር (በቀይ በአልጫ)",
+        "",
+        500
+      ],
+      [
+        "Special Firfir ስፔሻል ፍርፍር",
+        "",
+        800
+      ],
+      [
+        "Tibs Firfir  ጥብስ ፍርፍር (በቀይ በአልጫ)",
+        "",
+        600
+      ],
+      [
+        "Bozena Shiro  ቦዘና ሽሮ",
+        "",
+        500
+      ]
+    ]
+  ],
+  [
+    "Juices & Shakes",
+    "Blended fresh and served cold.",
+    [
+      [
+        "Chocoloate Milkshakes",
+        "",
+        400
+      ],
+      [
+        "Strawberry Milkshakes",
+        "",
+        450
+      ],
+      [
+        "Vanilla or Milkshakes",
+        "",
+        400
+      ],
+      [
+        "Avocado Milkshakes",
+        "",
+        400
+      ],
+      [
+        "Mango Milkshakes",
+        "",
+        400
+      ],
+      [
+        "Avocado Juice",
+        "",
+        350
+      ],
+      [
+        "Mango juice",
+        "",
+        380
+      ],
+      [
+        "Cocktail  Juice",
+        "",
+        400
+      ],
+      [
+        "Papaya Juice",
+        "",
+        300
+      ],
+      [
+        "Strawberry Juice",
+        "",
+        410
+      ],
+      [
+        "watermelon Juice",
+        "",
+        350
+      ]
+    ]
+  ],
+  [
+    "Hot Beverages",
+    "Slow down and stay awhile.",
+    [
+      [
+        "Café late",
+        "",
+        180
+      ],
+      [
+        "Cappuchino",
+        "",
+        220
+      ],
+      [
+        "Coffee",
+        "",
+        130
+      ],
+      [
+        "Coffee and Tea Espresso",
+        "",
+        140
+      ],
+      [
+        "Double Espresso",
+        "",
+        220
+      ],
+      [
+        "Double Fasting Macchiato",
+        "",
+        280
+      ],
+      [
+        "Double Macchiato",
+        "",
+        250
+      ],
+      [
+        "Espresso",
+        "",
+        130
+      ],
+      [
+        "Fasting late",
+        "",
+        220
+      ],
+      [
+        "Fasting Macchiato",
+        "",
+        180
+      ],
+      [
+        "Ginger Tea",
+        "",
+        130
+      ],
+      [
+        "Macchiato",
+        "",
+        150
+      ],
+      [
+        "Milk",
+        "",
+        180
+      ]
+    ]
+  ],
+  [
+    "Cold Beverages",
+    "Chilled and refreshing.",
+    [
+      [
+        "Water 1/2 lit",
+        "",
+        50
+      ],
+      [
+        "Water 1 lit",
+        "",
+        70
+      ],
+      [
+        "Water 2 lit",
+        "",
+        90
+      ],
+      [
+        "Soft Drink",
+        "",
+        70
+      ],
+      [
+        "Beer",
+        "",
+        130
+      ],
+      [
+        "Hineken Beer",
+        "",
+        150
+      ],
+      [
+        "Alchole free Flavored Drinks",
+        "",
+        130
+      ]
+    ]
+  ],
+  [
+    "Extras",
+    "Make it just the way you like it.",
+    [
+      [
+        "EXTRA BREAD",
+        "",
+        30
+      ],
+      [
+        "EXTRA HONEY",
+        "",
+        50
+      ],
+      [
+        "EXTRA ENJERA FULL",
+        "",
+        70
+      ],
+      [
+        "EXTRA ENJERA HALF",
+        "",
+        35
+      ],
+      [
+        "EXTRA SYRUP",
+        "",
+        50
+      ]
+    ]
+  ],
+  [
+    "Takeaway",
+    "Packed with care to enjoy anywhere.",
+    [
+      [
+        "TAKEAWAY BOX",
+        "",
+        80
+      ],
+      [
+        "TAKEAWAY FOIL",
+        "",
+        80
+      ],
+      [
+        "TAKEAWAY BAG",
+        "",
+        60
+      ],
+      [
+        "TAKEAWAY CUP",
+        "",
+        30
+      ]
+    ]
+  ]
+]
