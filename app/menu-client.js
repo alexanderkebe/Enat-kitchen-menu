@@ -1,15 +1,44 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import {
+  LayoutGrid, Sunrise, Drumstick, Fish, Beef,
+  Hamburger, UtensilsCrossed, Pizza, Soup, Salad,
+  Shell, Scroll, CircleDot, Wheat, Sparkles,
+  CupSoda, Coffee, IceCreamCone, Plus, ExternalLink,
+} from "lucide-react";
 import "./menu.css";
 
 const isGroup = (name, price) => price == null && /\/(?:Non\s*)?Fasting$/i.test(name);
-const categoryMarks = {
-  All: "⠿", Breakfast: "◒", Chicken: "⌘", Fish: "◁", Beef: "▱",
-  Burgers: "▦", Sandwiches: "▤", Pizza: "◢", Soups: "◠", Salads: "⌁",
-  Spaghetti: "≋", Wraps: "◔", Shawarma: "◉", Rice: "◍", "Ethiopian Corner": "✦",
-  "Juices & Shakes": "◐", "Hot Beverages": "⊹", "Cold Beverages": "❈", Extras: "+", Takeaway: "↗",
+
+const ICON_SIZE = 18;
+const categoryIcons = {
+  All:                LayoutGrid,
+  Breakfast:          Sunrise,
+  Chicken:            Drumstick,
+  Fish:               Fish,
+  Beef:               Beef,
+  Burgers:            Hamburger,
+  Sandwiches:         UtensilsCrossed,
+  Pizza:              Pizza,
+  Soups:              Soup,
+  Salads:             Salad,
+  Spaghetti:          Shell,
+  Wraps:              Scroll,
+  Shawarma:           CircleDot,
+  Rice:               Wheat,
+  "Ethiopian Corner": Sparkles,
+  "Juices & Shakes":  CupSoda,
+  "Hot Beverages":    Coffee,
+  "Cold Beverages":   IceCreamCone,
+  Extras:             Plus,
+  Takeaway:           ExternalLink,
 };
+
+function CategoryIcon({ name }) {
+  const Icon = categoryIcons[name] ?? LayoutGrid;
+  return <Icon size={ICON_SIZE} strokeWidth={1.6} aria-hidden="true" />;
+}
 
 export default function MenuClient({ initialSections }) {
   const [sections, setSections] = useState(initialSections);
@@ -87,7 +116,7 @@ export default function MenuClient({ initialSections }) {
         <div className="tabs" role="group" aria-label="Menu categories">
           {["All", ...sections.map(([title]) => title)].map((title) =>
             <button key={title} type="button" className={active === title ? "active" : ""}
-              aria-pressed={active === title} onClick={() => setActive(title)}><span aria-hidden="true">{categoryMarks[title] ?? "◌"}</span>{title}</button>)}
+              aria-pressed={active === title} onClick={() => setActive(title)}><CategoryIcon name={title} />{title}</button>)}
         </div>
         <label className="category-picker">Category
           <select aria-label="Category" value={active} onChange={(event) => setActive(event.target.value)}>

@@ -39,10 +39,10 @@
 .browse-label{grid-column:1/-1;margin:0;color:#50634e;font-size:11px;font-weight:700;letter-spacing:.26em;text-transform:uppercase}
 .tabs{display:flex;grid-column:1/-1;gap:10px;min-width:0;overflow-x:auto;padding:0 0 14px;scrollbar-width:thin;scrollbar-color:#8f9c7e transparent}
 .tabs button{display:flex;align-items:center;flex-shrink:0;gap:10px;min-height:54px;padding:12px 20px;border:1px solid #d9d7cc;border-radius:30px;background:#fffefa;color:var(--ink);cursor:pointer;font-size:14px}
-.tabs button>span{font-size:18px;line-height:1;color:#4c6149}
+.tabs button>svg{flex-shrink:0;color:#4c6149;opacity:.85}
 .tabs button:hover{background:#edf0e3}
 .tabs button.active{background:linear-gradient(135deg,#3c5834,#263f22);border-color:var(--green);color:white;box-shadow:0 7px 13px #253b2024}
-.tabs button.active>span{color:#dce7cc}
+.tabs button.active>svg{color:#dce7cc;opacity:1}
 .search{display:flex;align-items:center;gap:12px;min-width:0;min-height:54px;padding:12px 18px;border:1px solid #d2d1ca;background:white;border-radius:13px;box-shadow:inset 0 1px 2px #27331d08}
 .search svg{flex-shrink:0}
 .search input{width:100%;min-width:0;border:0;background:transparent;color:var(--ink);font-size:16px;outline:none}
