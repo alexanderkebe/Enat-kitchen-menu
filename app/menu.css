@@ -47,7 +47,7 @@
 .search svg{flex-shrink:0}
 .search input{width:100%;min-width:0;border:0;background:transparent;color:var(--ink);font-size:16px;outline:none}
 .search:focus-within{outline:2px solid #63734e;outline-offset:2px}
-.category-picker{display:none}
+.category-picker-custom{display:none}
 .sort-control{display:flex;align-items:center;gap:10px;min-height:54px;padding:0 14px;border:1px solid #d9d7cc;border-radius:13px;background:#fffefa;color:#30402d}
 .sort-control>span{font-size:21px;transform:rotate(90deg)}
 .sort-control select{width:100%;border:0;background:transparent;color:inherit;font-size:14px;outline:0}
@@ -80,8 +80,27 @@
 .menu-intro .eyebrow{gap:15px;margin-bottom:19px}.menu-intro .eyebrow span{width:40px}.menu-intro h2{font-size:clamp(58px,18vw,78px)}.menu-intro>p:last-child{margin-top:15px;font-size:15px}
 .menu-side-note,.menu-leaves{display:none}
 .tools{grid-template-columns:minmax(0,1fr);gap:12px;margin:34px 0 0;padding:18px 14px;border-radius:13px}
-.browse-label{font-size:10px}.tabs{display:none}.category-picker{display:flex;align-items:center;gap:12px;font-size:12px;color:#626a5b}
-.category-picker select{min-width:0;flex:1;width:100%;min-height:44px;padding:8px 12px;border:1px solid #24311935;border-radius:6px;background:var(--paper);color:var(--ink);font-size:16px}
+.browse-label{display:none}
+.tabs{display:none}
+.category-picker-custom{display:flex;flex-direction:column;width:100%;position:relative;z-index:20}
+.category-picker-label{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#50634e;margin-bottom:6px}
+.category-dropdown-trigger{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:52px;padding:8px 14px;border:1.5px solid #d9d7cc;border-radius:14px;background:#fffefa;color:var(--ink);cursor:pointer;text-align:left;box-shadow:0 2px 6px rgba(36,49,25,0.05);transition:border-color .2s,box-shadow .2s,background-color .2s}
+.category-dropdown-trigger:hover,.category-dropdown-trigger:focus-visible{background:#f7f9f1;outline:none;border-color:#4a6344}
+.category-dropdown-trigger.open{border-color:#4a6344;box-shadow:0 0 0 3px rgba(74,99,68,0.15)}
+.trigger-icon-wrap{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:#edf1e4;color:#314022;flex-shrink:0}
+.trigger-text{flex:1;font-family:Georgia,serif;font-size:15.5px;font-weight:600;letter-spacing:-.01em;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.trigger-chevron{color:#626a5b;flex-shrink:0;transition:transform .25s cubic-bezier(.4,0,.2,1)}
+.trigger-chevron.rotate{transform:rotate(180deg);color:#314022}
+.category-dropdown-menu{position:absolute;top:calc(100% + 6px);left:0;right:0;z-index:150;background:#fffefa;border:1.5px solid #d9d3c5;border-radius:16px;padding:6px;box-shadow:0 14px 34px rgba(36,49,25,0.18),0 2px 8px rgba(36,49,25,0.06);max-height:310px;overflow-y:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#8f9c7e transparent;animation:dropMenuFadeIn .2s ease-out}
+@keyframes dropMenuFadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+.category-dropdown-item{display:flex;align-items:center;gap:12px;width:100%;min-height:46px;padding:8px 12px;border:none;border-radius:10px;background:transparent;cursor:pointer;text-align:left;transition:background .15s ease,color .15s ease}
+.category-dropdown-item:hover,.category-dropdown-item:focus-visible{background:#f1f4e8;outline:none}
+.category-dropdown-item.selected{background:#e9f0df}
+.item-icon-wrap{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:8px;background:#edf1e4;color:#3a4f2b;flex-shrink:0;transition:background .15s,color .15s}
+.category-dropdown-item.selected .item-icon-wrap{background:#314022;color:#e5ecd8}
+.item-text{flex:1;font-family:Georgia,serif;font-size:15px;color:var(--ink)}
+.category-dropdown-item.selected .item-text{font-weight:700;color:#203018}
+.item-check{color:#314022;flex-shrink:0;margin-left:auto}
 .sort-control{min-height:48px}.search{min-height:48px;border-radius:8px}
 .menu-section{grid-template-columns:1fr;gap:18px;padding:36px 0}
 .section-heading h3{font-size:38px;margin-bottom:8px}.section-heading p{font-size:14px}

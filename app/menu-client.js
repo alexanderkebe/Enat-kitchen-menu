@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useRef } from "react";
 import {
   LayoutGrid, Sunrise, Drumstick, Fish, Beef,
   Hamburger, UtensilsCrossed, Pizza, Soup, Salad,
   Shell, Scroll, CircleDot, Wheat, Sparkles,
   CupSoda, Coffee, IceCreamCone, Plus, ExternalLink,
+  ChevronDown, Check,
 } from "lucide-react";
 import "./menu.css";
 
@@ -38,6 +39,83 @@ const categoryIcons = {
 function CategoryIcon({ name }) {
   const Icon = categoryIcons[name] ?? LayoutGrid;
   return <Icon size={ICON_SIZE} strokeWidth={1.6} aria-hidden="true" />;
+}
+
+function CategoryDropdown({ categories, active, onSelect }) {
+  const [open, setOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    }
+    function handleKeyDown(event) {
+      if (event.key === "Escape") {
+        setOpen(false);
+      }
+    }
+    if (open) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("touchstart", handleClickOutside);
+      document.addEventListener("keydown", handleKeyDown);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [open]);
+
+  return (
+    <div className="category-picker-custom" ref={dropdownRef}>
+      <span className="category-picker-label">Category</span>
+      <button
+        type="button"
+        className={`category-dropdown-trigger ${open ? "open" : ""}`}
+        onClick={() => setOpen((prev) => !prev)}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-label="Filter menu by category"
+      >
+        <span className="trigger-icon-wrap">
+          <CategoryIcon name={active} />
+        </span>
+        <span className="trigger-text">
+          {active === "All" ? "All Categories" : active}
+        </span>
+        <ChevronDown size={18} className={`trigger-chevron ${open ? "rotate" : ""}`} aria-hidden="true" />
+      </button>
+
+      {open && (
+        <div className="category-dropdown-menu" role="listbox" aria-label="Select category">
+          {categories.map((cat) => {
+            const isSelected = active === cat;
+            return (
+              <button
+                key={cat}
+                type="button"
+                role="option"
+                aria-selected={isSelected}
+                className={`category-dropdown-item ${isSelected ? "selected" : ""}`}
+                onClick={() => {
+                  onSelect(cat);
+                  setOpen(false);
+                }}
+              >
+                <span className="item-icon-wrap">
+                  <CategoryIcon name={cat} />
+                </span>
+                <span className="item-text">{cat === "All" ? "All Categories" : cat}</span>
+                {isSelected && <Check size={16} className="item-check" aria-hidden="true" />}
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default function MenuClient({ initialSections }) {
@@ -118,12 +196,11 @@ export default function MenuClient({ initialSections }) {
             <button key={title} type="button" className={active === title ? "active" : ""}
               aria-pressed={active === title} onClick={() => setActive(title)}><CategoryIcon name={title} />{title}</button>)}
         </div>
-        <label className="category-picker">Category
-          <select aria-label="Category" value={active} onChange={(event) => setActive(event.target.value)}>
-            <option value="All">All categories</option>
-            {sections.map(([title]) => <option key={title} value={title}>{title}</option>)}
-          </select>
-        </label>
+        <CategoryDropdown
+          categories={["All", ...sections.map(([title]) => title)]}
+          active={active}
+          onSelect={setActive}
+        />
         <label className="search">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
           <input type="search" aria-label="Search menu" placeholder="Search the menu (e.g. pasta, chicken...)" value={query} onChange={(event) => setQuery(event.target.value)}/>
